@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Counter</title>
+</head>
+
+<body>
+    <h1>Counter: {{ counter.value }}</h1>
+    <form action="{{ url_for('increment') }}" method="get">
+        <button type="submit">Up</button>
+    </form>
+    <form action="{{ url_for('decrement') }}" method="get">
+        <button type="submit">Down</button>
+    </form>
+</body>
+
+</html>
